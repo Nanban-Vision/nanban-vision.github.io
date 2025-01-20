@@ -1,8 +1,10 @@
 #home {
-  column-gap: 100px;
+   padding: 80px 40px;
+  gap: 60px
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px 20px;
   height: 100vh;
   color: #333;
   overflow: hidden; 
@@ -12,7 +14,6 @@
   max-width: 600px;
   text-align: center;
   margin-right: 20px;
-  margin-left: 20px;
 }
 
 .hero-title {

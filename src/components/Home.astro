@@ -1,0 +1,27 @@
+---
+import '../styles/Home.css'; 
+import { Image } from 'astro:assets';
+import  nanban_ad from '../assets/nanban_ad.mp4';
+---
+
+<section id="home">  
+  <div class="hero-content">
+    <h1 class="hero-title">Empowering the Visually Impaired with Smart Vision Assistance</h1>
+    <p class="hero-tagline">An AI Aid for the Blind</p>
+    <p class="hero-subtitle">
+      Nanban combines object detection, distance measurement, and voice assistance to provide real-time support to the visually impaired.
+    </p>
+    <div class="cta-buttons">
+      <a href="#about" class="cta-button learn-more">Learn More</a>
+      <a href="#store" class="cta-button get-started">Get Started</a>
+    </div>
+  </div>
+  <div class="hero-video">
+    <video width="100%" height="auto" controls>
+      <source src={nanban_ad} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
