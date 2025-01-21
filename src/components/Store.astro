@@ -1,0 +1,23 @@
+---
+import '../styles/Store.css'; 
+import { Image } from 'astro:assets';
+import nanban_product from '../assets/nanban_product.png'; 
+---
+
+<section id="store" class="store-section">
+  <div class="store-content">
+    <h2 class="store-title">Nanban - Smart Vision Assistance</h2>
+    <div class="product-thumbnail">
+      <Image src={nanban_product} alt="Concept Sketch of Nanban" class="product-image" />
+    </div>
+    <p class="product-description">
+      Nanban provides innovative and reliable assistance for the visually impaired, enhancing mobility and safety. With advanced object detection, distance measurement, and voice assistance, Nanban empowers its users to navigate confidently in everyday environments.
+    </p>
+    <div class="product-price">
+      ₹13,999
+    </div>
+    <div class="cta-buttons">
+      <a href="#buy" class="cta-button buy-now">Buy Now</a>
+    </div>
+  </div>
+</section>
