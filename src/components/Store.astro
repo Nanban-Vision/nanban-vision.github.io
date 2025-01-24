@@ -37,18 +37,32 @@ import nanban_product from '../assets/nanban_product.png';
 </div>
 
 <script>
-  document.getElementById('buy-now').addEventListener('click', function() {
-    document.getElementById('popup').style.display = 'flex';
-  });
+  const buyNowButton = document.getElementById('buy-now');
+  if (buyNowButton) {
+    buyNowButton.addEventListener('click', function () {
+      const popup = document.getElementById('popup');
+      if (popup) {
+        popup.style.display = 'flex';
+      }
+    });
+  }
 
-  document.getElementById('close-popup').addEventListener('click', function() {
-    document.getElementById('popup').style.display = 'none';
-  });
+  const closePopupButton = document.getElementById('close-popup');
+  if (closePopupButton) {
+    closePopupButton.addEventListener('click', function () {
+      const popup = document.getElementById('popup');
+      if (popup) {
+        popup.style.display = 'none';
+      }
+    });
+  }
 
-  window.addEventListener('click', function(event) {
-    if (event.target === document.getElementById('popup')) {
-      document.getElementById('popup').style.display = 'none';
-    }
-  });
+  const popupElement = document.getElementById('popup');
+  if (popupElement) {
+    window.addEventListener('click', function (event) {
+      if (event.target === popupElement) {
+        popupElement.style.display = 'none';
+      }
+    });
+  }
 </script>
-
