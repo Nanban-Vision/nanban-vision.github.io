@@ -84,7 +84,7 @@
 }
 
 .toggle-sidebar {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: var(--accent); 
