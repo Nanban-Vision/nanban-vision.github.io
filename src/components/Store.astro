@@ -17,7 +17,42 @@ import nanban_product from '../assets/nanban_product.png';
       ₹13,999
     </div>
     <div class="cta-buttons">
-      <a href="#buy" class="cta-button buy-now">Buy Now</a>
+      <a href="javascript:void(0);" class="cta-button buy-now" id="buy-now">Buy Now</a>
     </div>
   </div>
 </section>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="close-popup" class="close-popup">&times;</span>
+    <Image src={nanban_product} alt="Nanban Product" class="popup-image" />
+    <p class="reach-out-text">
+      For inquiries and to make a purchase, reach out to us!
+      <br />
+      Call us at: <strong>+91 9946031110</strong>
+      <br />
+      Email us at: <strong>arungeorgesaji@gmail.com</strong>
+    </p>
+  </div>
+</div>
+      Email us at: <strong>@nanban.com</strong>
+    </p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('buy-now').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'flex';
+  });
+
+  document.getElementById('close-popup').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('popup')) {
+      document.getElementById('popup').style.display = 'none';
+    }
+  });
+</script>
+

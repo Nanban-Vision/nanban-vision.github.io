@@ -1,6 +1,9 @@
 ---
 import '../styles/About.css'; 
 import { Image } from 'astro:assets';
+import paul from '../assets/paul.jpg'; 
+import arun from '../assets/arun.jpg'; 
+import aneesh from '../assets/aneesh.jpg'; 
 ---
 
 <section id="about" class="about-section">
@@ -10,7 +13,7 @@ import { Image } from 'astro:assets';
 
     <div class="team-member">
       <div class="photo">
-        <img src="/path/to/paul-photo.jpg" alt="Paul K Shans">
+        <Image src={paul} alt="Paul K Shans" />
       </div>
       <div class="details">
         <h2>Paul K Shans</h2>
@@ -21,7 +24,7 @@ import { Image } from 'astro:assets';
 
     <div class="team-member">
       <div class="photo">
-        <img src="/path/to/arun-photo.jpg" alt="Arun George Saji">
+        <Image src={arun} alt="Arun George Saji" />
       </div>
       <div class="details">
         <h2>Arun George Saji</h2>
@@ -32,7 +35,7 @@ import { Image } from 'astro:assets';
 
     <div class="team-member">
       <div class="photo">
-        <img src="/path/to/aneesh-photo.jpg" alt="Aneesh Mohan">
+        <Image src={aneesh} alt="Aneesh Mohan" />
       </div>
       <div class="details">
         <h2>Aneesh Mohan</h2>
