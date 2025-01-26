@@ -5,6 +5,7 @@
   height: 100vh;  
   padding: 40px 20px; 
   background-color: #e1f5fe;
+  margin-bottom: calc(100px + max(0px, ((900px - 100vw) / 50) * 50));
 }
 
 .nanban-content {

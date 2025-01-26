@@ -1,18 +1,19 @@
 .banner {
   background: rgba(20, 20, 20, 0.8); 
+  width: 93%;
   color: #fff; 
-    padding: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    animation: slideIn 2s ease;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); 
-    right: 0;
-    z-index: 1000;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: slideIn 2s ease;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  right: 0;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -45,13 +46,13 @@
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px; /* Hidden initially */
+  right: -250px; 
   width: 250px;
   height: 100%;
-  background: rgba(20, 20, 20, 0.9); /* Slightly transparent dark background */
-  color: var(--text-color); /* Ensure your text color is readable */
-  padding: 30px 20px; /* Add padding inside the sidebar */
-  transition: right 0.4s ease; /* Smooth sliding effect */
+  background: rgba(20, 20, 20, 0.9); 
+  color: var(--text-color);
+  padding: 30px 20px; 
+  transition: right 0.4s ease; 
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -131,7 +132,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     .toggle-sidebar {
         display: block;
         margin: 0;
