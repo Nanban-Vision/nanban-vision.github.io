@@ -1,0 +1,19 @@
+---
+import '../styles/Gallery.css'; 
+import { Image } from 'astro:assets';
+
+const images = Object.entries(
+import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
+);
+---
+
+<section id="gallery">
+  <div class="gallery-grid full-page">
+    {images.map(([path, image]) => (
+      <div class="gallery-item" key={path}>
+        <Image src={image.default} alt={path.split('/').pop()} class="gallery-image" />
+      </div>
+    ))}
+  </div>
+</section>
+
