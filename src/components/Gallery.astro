@@ -1,21 +1,34 @@
 ---
 import '../styles/Gallery.css'; 
 import { Image } from 'astro:assets';
-
-const images = Object.entries(
-  import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
-) as [string, { default: string }][];
+import image01 from '../assets/gallery/01.jpg'; 
+import image02 from '../assets/gallery/02.jpg'; 
+import image03 from '../assets/gallery/03.jpg'; 
+import image04 from '../assets/gallery/04.jpg'; 
+import image05 from '../assets/gallery/05.jpg'; 
+import image06 from '../assets/gallery/06.jpg'; 
+import image07 from '../assets/gallery/07.jpg'; 
+import image08 from '../assets/gallery/08.jpg'; 
+import image09 from '../assets/gallery/09.jpg'; 
+import image10 from '../assets/gallery/10.jpeg'; 
+import image11 from '../assets/gallery/11.jpeg'; 
+import image12 from '../assets/gallery/12.jpeg'; 
+import image13 from '../assets/gallery/13.jpg'; 
 ---
 <section id="gallery">
   <div class="gallery-grid">
-    {images.map(([path, image]) => (
-      <div class="gallery-item">
-        <Image 
-          src={image.default} 
-          alt={path.split('/').pop() || ''} 
-          class:list={["gallery-image"]} 
-        />
-      </div>
-    ))}
+      <Image src={image01} class="gallery-image" alt="image01" />
+      <Image src={image02} class="gallery-image" alt="image02" />
+      <Image src={image03} class="gallery-image" alt="image03" />
+      <Image src={image04} class="gallery-image" alt="image04" />
+      <Image src={image05} class="gallery-image" alt="image05" />
+      <Image src={image06} class="gallery-image" alt="image06" />
+      <Image src={image07} class="gallery-image" alt="image07" />
+      <Image src={image08} class="gallery-image" alt="image08" />
+      <Image src={image09} class="gallery-image" alt="image09" />
+      <Image src={image10} class="gallery-image" alt="image10" />
+      <Image src={image11} class="gallery-image" alt="image11" />
+      <Image src={image12} class="gallery-image" alt="image12" />
+      <Image src={image13} class="gallery-image" alt="image13" />
   </div>
 </section>

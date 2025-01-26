@@ -17,7 +17,11 @@
   background-color: #f9f9f9;
 }
 
-.gallery-item {
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -25,14 +29,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item:hover {
+.gallery-image:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
 }
