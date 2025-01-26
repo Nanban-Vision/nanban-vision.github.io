@@ -13,7 +13,7 @@ const images = Object.entries(
         <Image 
           src={image.default} 
           alt={path.split('/').pop() || ''} 
-          class="gallery-image" 
+          class:list={["gallery-image"]} 
         />
       </div>
     ))}
