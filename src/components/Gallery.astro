@@ -6,12 +6,15 @@ const images = Object.entries(
   import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
 ) as [string, { default: string }][];
 ---
-
 <section id="gallery">
   <div class="gallery-grid">
     {images.map(([path, image]) => (
-      <div class="gallery-item" key={path}>
-        <Image src={image.default} alt={path.split('/').pop()} class="gallery-image" />
+      <div class="gallery-item">
+        <Image 
+          src={image.default} 
+          alt={path.split('/').pop() || ''} 
+          class="gallery-image" 
+        />
       </div>
     ))}
   </div>
