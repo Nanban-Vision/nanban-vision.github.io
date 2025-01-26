@@ -3,12 +3,12 @@ import '../styles/Gallery.css';
 import { Image } from 'astro:assets';
 
 const images = Object.entries(
-import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
+  import.meta.glob('../assets/gallery/*.{png,jpg,jpeg}', { eager: true })
 );
 ---
 
 <section id="gallery">
-  <div class="gallery-grid full-page">
+  <div class="gallery-grid">
     {images.map(([path, image]) => (
       <div class="gallery-item" key={path}>
         <Image src={image.default} alt={path.split('/').pop()} class="gallery-image" />
@@ -16,4 +16,3 @@ import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
     ))}
   </div>
 </section>
-
