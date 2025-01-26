@@ -3,8 +3,8 @@ import '../styles/Gallery.css';
 import { Image } from 'astro:assets';
 
 const images = Object.entries(
-  import.meta.glob('../assets/gallery/*.{png,jpg,jpeg}', { eager: true })
-);
+  import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,webp}', { eager: true })
+) as [string, { default: string }][];
 ---
 
 <section id="gallery">
