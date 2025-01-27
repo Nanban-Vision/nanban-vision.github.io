@@ -1,14 +1,14 @@
 ---
 import '../styles/Store.css'; 
 import { Image } from 'astro:assets';
-import nanban_product from '../assets/nanban_product.png'; 
+import nanban_product from '../assets/nanban_product.jpg'; 
 ---
 
 <section id="store" class="store-section">
   <div class="store-content">
     <h2 class="store-title">Nanban - Smart Vision Assistance</h2>
     <div class="product-thumbnail">
-      <Image src={nanban_product} alt="Concept Sketch of Nanban" class="product-image" />
+      <Image src={nanban_product} height=500vw alt="Concept Sketch of Nanban" class="product-image" />
     </div>
     <p class="product-description">
       Nanban provides innovative and reliable assistance for the visually impaired, enhancing mobility and safety. With advanced object detection, distance measurement, and voice assistance, Nanban empowers its users to navigate confidently in everyday environments.
@@ -25,7 +25,7 @@ import nanban_product from '../assets/nanban_product.png';
 <div id="popup" class="popup">
   <div class="popup-content">
     <span id="close-popup" class="close-popup">&times;</span>
-    <Image src={nanban_product} alt="Nanban Product" class="popup-image" />
+    <Image src={nanban_product} height=500vw alt="Nanban Product" class="popup-image" />
     <p class="reach-out-text">
       For inquiries and to make a purchase, reach out to us!
       <br />
