@@ -1,9 +1,9 @@
 :root {
-  --primary-dark: #1A365D;    /* Deep navy blue */
-  --secondary-dark: #2D3748;  /* Charcoal */
-  --accent-blue: #3182CE;     /* Bright blue */
-  --accent-orange: #DD6B20;   /* Warm orange */
-  --background: #F7FAFC;      /* Off-white */
+  --primary-dark: #1A365D;    
+  --secondary-dark: #2D3748;  
+  --accent-blue: #3182CE;     
+  --accent-orange: #DD6B20;   
+  --background: #F7FAFC;      
 }
 
 #home {
@@ -86,21 +86,20 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #home {
-    padding: 60px 15px;
+      background-size: 200%;
   }
-  .hero-title {
-    font-size: 2.2rem;
+}
+
+@media (max-width: 400px) {
+  #home {
+      background-size: 300%;
   }
-  .hero-tagline {
-    font-size: 1.5rem;
-  }
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  .cta-button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
+}
+
+@media (max-width: 350px) {
+  #home {
+      background-size: 400%;
   }
 }
