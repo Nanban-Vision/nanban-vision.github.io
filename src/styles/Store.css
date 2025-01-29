@@ -5,7 +5,7 @@
   height: 100vh;
   padding: 40px 20px;
   background-color: #e1f5fe;
-  margin-bottom: calc(200px + max(0px, ((1000px - 100vw) / 100) * 10));
+  margin-bottom: calc(300px + max(0px, ((1000px - 100vw) / 100) * 10));
 }
 
 .store-content {
