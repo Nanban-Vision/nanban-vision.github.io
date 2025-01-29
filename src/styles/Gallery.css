@@ -1,11 +1,24 @@
 #gallery {
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
+  justify-content: flex-start; 
   align-items: center;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  margin-bottom: calc(200px + max(0px, ((1000px - 100vw) / 100) * 10));
+  padding: 2rem 0; 
+}
+
+.gallery-content {
+  background-color: #f9f9f9; 
+}
+
+.gallery-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 2rem 0; 
+  text-align: center;
+  width: 100%; 
+  position: relative; 
 }
 
 .gallery-grid {
@@ -15,7 +28,6 @@
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #f9f9f9;
 }
 
 .gallery-image {

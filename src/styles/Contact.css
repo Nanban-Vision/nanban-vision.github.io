@@ -3,6 +3,14 @@ html, body {
   margin: 0;
 }
 
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .contact-section {
   background-color: #e1f5fe;
   display: flex;
